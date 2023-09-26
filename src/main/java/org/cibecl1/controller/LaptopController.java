@@ -25,7 +25,7 @@ public class LaptopController {
 		model.addAttribute("laptop", lap );
 		return "crudlaptop";
 	}
-	 @PostMapping("/Grabar")
+	 @PostMapping("/grabar")
 	 public String grabarLaptop(@ModelAttribute Laptop Laptop) {
 		 repo.save(Laptop);
 		 return "Exito";
