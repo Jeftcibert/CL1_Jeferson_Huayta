@@ -52,14 +52,6 @@ public class Laptop {
 	public void setCod_marca(int cod_marca) {
 		this.cod_marca = cod_marca;
 	}
-	public Laptop(int cod_laptop, String des_laptop, double pre_laptop, int sto_laptop, int cod_marca) {
-		super();
-		this.cod_laptop = cod_laptop;
-		this.des_laptop = des_laptop;
-		this.pre_laptop = pre_laptop;
-		this.sto_laptop = sto_laptop;
-		this.cod_marca = cod_marca;
-	}
-	
+
 	
 }
