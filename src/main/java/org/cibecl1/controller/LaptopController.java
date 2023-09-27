@@ -30,5 +30,11 @@ public class LaptopController {
 		 repo.save(Laptop);
 		 return "Exito";
 	 }
+	 //login
+	 @GetMapping("/login")
+		public String logeoUsuario() {
+			
+			return "login";
+		}
 
 }
