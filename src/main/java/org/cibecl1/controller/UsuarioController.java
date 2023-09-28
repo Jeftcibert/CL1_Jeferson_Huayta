@@ -26,7 +26,7 @@ public class UsuarioController {
 	@PostMapping("/validar")
 	public String grabarPag(@ModelAttribute Usuario  usuario, Model model ) {
 		System.out.println(usuario);
-		Usuario u = repou.fingByCorreoAndClave(usuario.getCorreo(), usuario.getClave());
+		Usuario u = repou.findByCorreoAndClave(usuario.getCorreo(), usuario.getClave());
 		System.out.println(u);
 		// Validacion 
 		if (u==null) {

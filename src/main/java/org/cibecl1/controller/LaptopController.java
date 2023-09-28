@@ -19,7 +19,7 @@ public class LaptopController {
 		model.addAttribute("lstLaptop",repo.findAll());
 		return "Listado";
 	}
-	@GetMapping("/cargar")
+	@GetMapping("/cargarDatos")
 	public String CargarLapto(Model model) {
 		Laptop lap = new Laptop();
 		model.addAttribute("laptop", lap );
